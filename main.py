@@ -6,5 +6,6 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Inventory Management API")
 
+#main app
 app.include_router(product.router)
 app.include_router(supplier.router)
